@@ -67,7 +67,7 @@ ax = fig.add_subplot(111, projection='3d') # Method 2
 x = atomlocal[:, 0]
 y = atomlocal[:, 1]
 z = atomlocal[:, 2]
-e = [(edata1[:, 0] - edata0[:, 0]) + (edata1[:, 1] - edata0[:, 1])]
+e = ((edata1[:, 0] - edata0[:, 0]) + (edata1[:, 1] - edata0[:, 1]))
 #       bending   +  stretching
 #e = [(edata1[:, 0] - edata0[:, 0])]  #choose one to analyze
 
